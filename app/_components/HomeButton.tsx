@@ -10,7 +10,7 @@ export default function HomeButton() {
     <Link
       href='/'
       aria-disabled={path === '/'}
-      className={`${path === '/' ? 'pointer-events-none text-white' : 'mr-2'}`}
+      className={`${path === '/' && 'pointer-events-none text-white'}`}
     >
       Home
     </Link>
