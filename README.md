@@ -2,7 +2,11 @@
 
 A Next.js markdown blog static site built with the App Router and MDX
 
-> Note: Since it is a static generated, it is ultra fast and SEO friendly
+> Note: To see a Live Demo, check out the [Next.js Markdown Blog (Pages Router)](https://github.com/emanuelefavero/next-markdown-blog) version and open the [Live Demo](https://next-markdown-blog-ivory.vercel.app/) link
+
+#### Screenshot
+
+<img src="screenshot.png" alt="screenshot" width="300">
 
 ## How to use
 
