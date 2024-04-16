@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Markdown Blog (App Router)
 
-## Getting Started
+A Next.js markdown blog static site built with the App Router and MDX
 
-First, run the development server:
+> Note: Since it is a static generated, it is ultra fast and SEO friendly
+
+## How to use
+
+### Installation
+
+- clone the repo and `cd` into it, then run:
+
+```bash
+npm install
+```
+
+### Development
+
+- run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to create new posts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- create a new folder inside `app/(blog)/` with the name of your post
+- create a new `page.mdx` file inside the folder
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- add the Markdown content of your post in the `page.mdx` file
 
-## Learn More
+> TIP: MDX supports JSX, so you can also import and use React components in your MDX files
 
-To learn more about Next.js, take a look at the following resources:
+## Test Static Site Generation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Make sure to add `output: 'export',` to the `next.config.mjs` file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+const nextConfig = {
+  output: 'export',
+}
+```
 
-## Deploy on Vercel
+- run the build command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- run the static site:
+
+```bash
+npx serve@latest out
+```
+
+## Resources
+
+- [Next.js](https://nextjs.org/)
+- [Next.js MDX](https://nextjs.org/docs/pages/building-your-application/configuring/mdx)
+- [MDX](https://mdxjs.com/)
+- [Static Web Page Wiki](https://en.wikipedia.org/wiki/Static_web_page?useskin=vector)
