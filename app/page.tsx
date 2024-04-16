@@ -12,17 +12,17 @@ export default function Home() {
       <h2>Category 1</h2>
       <ul>
         <li>
-          <Link href='/blog/post-1'>Post 1</Link>
+          <Link href='/post-1'>Post 1</Link>
         </li>
         <li>
-          <Link href='/blog/post-2'>Post 2</Link>
+          <Link href='/post-2'>Post 2</Link>
         </li>
       </ul>
 
       <h2>Category 2</h2>
       <ul>
         <li>
-          <Link href='/blog/post-3'>Post 3</Link>
+          <Link href='/post-3'>Post 3</Link>
         </li>
       </ul>
     </>
