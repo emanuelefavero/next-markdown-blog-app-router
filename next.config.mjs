@@ -8,7 +8,9 @@ const nextConfig = {
   // Configure `pageExtensions` to include MDX files
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 
-  // Optionally, add any other Next.js config below
+  // Enable a static export
+  // TIP: `output: 'export'` does the same as the deprecated `next export` command. It will generate static HTML files in the `out` directory when you run `npm run build`. You can use these files to deploy your static site. To test the static export in development, run `npx serve@latest out` after `npm run build`.
+  output: 'export',
 }
 
 // Export the configuration wrapped with MDX
