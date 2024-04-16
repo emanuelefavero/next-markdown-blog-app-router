@@ -1,4 +1,7 @@
-const withMDX = require('@next/mdx')()
+// Import the default function from '@next/mdx'
+import createMDX from '@next/mdx'
+
+const withMDX = createMDX()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,4 +11,5 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
 }
 
-module.exports = withMDX(nextConfig)
+// Export the configuration wrapped with MDX
+export default withMDX(nextConfig)
